@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Phototime</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="main-header">
@@ -37,18 +39,33 @@
         <section class="design">
            <a name="design"></a>
             <div class="design-wrap">
-                <h2>Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sed deserunt officia, beatae doloremque. Dolorem ipsam, nostrum, vero <b>recusandae quibusdam</b> incidunt quos vel quo ratione enim explicabo blanditiis, est non.</p>
-                <p><a href="#" class="button">Learn more</a></p>
-                <p class="design-variant"><b>01/05</b></p>
-                <button class="back"><img src="images/back.png" alt="back" title="back"></button>
-                <button class="next"><img src="images/next.png" alt="next" title="next"></button>
+                <div class="phone-slider">
+                    <div class="phone-img curry"></div>
+                    <div class="phone-img"></div>
+                    <div class="phone-img"></div>
+                    <div class="phone-img"></div>
+                    <div class="phone-img"></div>
+                </div>
+                <div class="design-wrap-content">
+                    <h2>Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sed deserunt officia, beatae doloremque. Dolorem ipsam, nostrum, vero <b>recusandae quibusdam</b> incidunt quos vel quo ratione enim explicabo blanditiis, est non.</p>
+                    <p><a href="#" class="button">Learn more</a></p>
+                    <p class="design-variant">
+                        <b><span class="img-num">01</span>/05</b>
+                    </p>
+                    <button class="prev">
+                        <img src="images/back.png" alt="back" title="back">
+                    </button>
+                    <button class="next">
+                        <img src="images/next.png" alt="next" title="next">
+                    </button>
+                </div>
             </div>
         </section>
         <section class="community">
             <div class="community-buttons">
-            <button class="back"><img src="images/back.png" alt="back" title="back"></button>
-            <button class="next"><img src="images/next.png" alt="next" title="next"></button>
+            <button class="prev"><img src="images/back.png" alt="back"></button>
+            <button class="next"><img src="images/next.png" alt="next"></button>
             </div>
             <div class="community-wrap">
                 <div>
@@ -56,16 +73,14 @@
                     <h2>Our community</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-                <figure>
-                    <a href="#">
-                        <img src="images/gallery-1.jpg" alt="gallery-1">
-                    </a>
-                </figure>
-                <figure>
-                    <a href="#">
-                        <img src="images/gallery-2.jpg" alt="gallery-2">
-                    </a>
-                </figure>
+                <div class="slider-box">
+                    <div class="slide curryFirst">
+                        <img src="images/slides/1.jpg" alt="slide-1">
+                    </div>
+                    <div class="slide currySecond">
+                        <img src="images/slides/2.jpg" alt="slide-2">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="subscribe">

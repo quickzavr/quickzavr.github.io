@@ -121,12 +121,64 @@ a {
     position: relative;
     color: #6a6a6a;
     background-color: #ffffff;
-    background-image: url(../images/phone.png);
+/*    background-image: url(../images/phone.png);
     background-repeat: no-repeat;
-    background-position: bottom left 124px;
+    background-position: bottom left 124px;*/
 }
 
 .design-wrap {
+    display: flex;
+}
+
+.phone-slider {
+    height: 412px;
+    width: 314px;
+    padding-top: 148px;
+    position: relative;
+    bottom: 0;
+    left: 120px;
+}
+
+.phone-img {
+    position: absolute;
+    display: none;
+}
+
+.phone-img.curry {
+    display: block;
+}
+
+.phone-img:first-child {
+    width: 314px;
+    height: 412px;
+    background: url(../images/phone-blue.png);
+}
+
+.phone-img:nth-child(2) {
+    width: 314px;
+    height: 412px;
+    background: url(../images/phone-green.png);
+}
+
+.phone-img:nth-child(3) {
+    width: 314px;
+    height: 412px;
+    background: url(../images/phone-red.png);
+}
+
+.phone-img:nth-child(4) {
+    width: 314px;
+    height: 412px;
+    background: url(../images/phone-yellow.png);
+}
+
+.phone-img:nth-child(5) {
+    width: 314px;
+    height: 412px;
+    background: url(../images/phone-white.png);
+}
+
+.design-wrap-content {
     position: absolute;
     width: 430px;
     height: 415px;
@@ -177,9 +229,17 @@ button {
     margin-right: 66px;
 }
 
-.community-wrap figure {
+.community-wrap .slider-box {
+    width: 768px;
+    height: 244px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.community-wrap .slide {
     margin: 0;
-    margin-right: 24px;
+    width: 370px;
+    height: 244px;
 }
 
 .community h2 {
