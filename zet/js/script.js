@@ -12,3 +12,9 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+
+$(".arrow").on('click', function(){
+var height =  $('.services').offset().top;
+
+$("html, body").animate({scrollTop: height}, "slow");
+});

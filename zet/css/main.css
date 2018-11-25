@@ -140,6 +140,7 @@ h1 {
 
 .header-link {
   margin: 0 auto;
+  margin-bottom: 60px;
   padding: 0px 20px;
   font-size: 13px;
   font-weight: 700;
@@ -351,10 +352,14 @@ h2 {
 
 td,
 th {
-  width: 33.333333%;
+  width: 30%;
   height: auto;
   position: relative;
   text-align: center; }
+
+th:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 td {
   height: 280px; }
@@ -401,13 +406,14 @@ td {
 .contact-form {
   margin-top: 15%;
   margin-left: 25%;
-  width: 400px; }
+  width: 50%;
+  height: 65%; }
 
 .contact input[type="text"],
 .contact input[type="email"] {
   margin-bottom: 5px;
   color: #ffffff;
-  width: 300px;
+  width: 75%;
   height: 45px;
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -419,7 +425,7 @@ td {
 
 .contact input[type="submit"] {
   color: #ffffff;
-  width: 120px;
+  width: 35%;
   height: 45px;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -432,7 +438,7 @@ textarea {
   font-size: 14px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 300px;
+  width: 75%;
   height: 145px;
   outline: none;
   border: 1px solid #ffffff;
@@ -456,13 +462,40 @@ textarea {
   padding-left: 10px; }
 
 @media screen and (max-width: 992px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0; }
+
   .works a {
     width: 33.333333%; }
+
+  .table th,
+  .table td {
+    padding: 5px 2px; }
+
+  .table td {
+    font-size: 12px;
+    padding-bottom: 30px; }
+
+  .pack {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 8px; }
+
+  .cost {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 8px; }
 
   .map {
     width: 100%; }
 
   .form {
-    width: 100%; } }
+    width: 100%; }
+
+  .contact-form {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
