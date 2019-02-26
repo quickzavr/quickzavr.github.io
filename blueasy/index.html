@@ -4,204 +4,215 @@
     <meta charset="UTF-8">
     <title>Blueasy</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-navigation">
-            <div class="header-container">
-                <p class="logo">Blu<span class="e-letter">e</span>asy</p>
-                <ul class="site-navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        <div class="header-bg"></div>
+        <div class="header-container">
+            <div class="header-wrap">
+                <div class="main-header__logo">
+                    <p class="logo__header">Blu<span class="logo__letter">e</span>asy</p>
+                </div>
+                <nav class="main-nav main-nav--closed">
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#">Home</a></li>
+                        <li class="main-nav__item"><a href="#">Services</a></li>
+                        <li class="main-nav__item"><a href="#">Features</a></li>
+                        <li class="main-nav__item"><a href="#">Portfolio</a></li>
+                        <li class="main-nav__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
-        <div class="header-phrase-wrap">
-            <p class="header-phrase">"I'm looking for the unexpected.</p>
-            <p class="header-phrase">I'm looking for things I've never seen before"</p>
+        </div>
+        <div class="quote-wrap">
+            <p class="main-header__quote">"I'm looking for the unexpected.</p>
+            <p class="main-header__quote">I'm looking for things I've never seen before"</p>
         </div>
     </header>
     
     <main>
         <section class="services">
             <div class="services-container">
-                <h2>Services</h2>
-                <ul class="services-list">
-                    <li>
-                        <img src="images/coffee.png" alt="coffee">
-                         <h3>Coffee</h3>
-                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                <h2 class="title">Services</h2>
+                <ul class="services__list">
+                    <li class="services-list__item">
+                        <img class="services-list__img" src="images/coffee.png" alt="coffee">
+                        <h3 class="services-list__title">Coffee</h3>
+                        <p class="services-list__text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </li>
-                    <li>
-                        <img src="images/instant.png" alt="instant">
-                        <h3>Instant</h3>
-                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    <li class="services-list__item">
+                        <img class="services-list__img" src="images/instant.png" alt="instant">
+                        <h3 class="services-list__title">Instant</h3>
+                        <p class="services-list__text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </li>
-                    <li>
-                        <img src="images/serious.png" alt="serious">
-                        <h3>Serious</h3>
-                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    <li class="services-list__item">
+                        <img class="services-list__img" src="images/serious.png" alt="serious">
+                        <h3 class="services-list__title">Serious</h3>
+                        <p class="services-list__text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </li>
-                    <li>
-                        <img src="images/frame.png" alt="frame">
-                        <h3>Frame</h3>
-                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    <li class="services-list__item">
+                        <img class="services-list__img" src="images/frame.png" alt="frame">
+                        <h3 class="services-list__title">Frame</h3>
+                        <p class="services-list__text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </li>
                 </ul>
             </div>
         </section>
+        
         <section class="portfolio">
             <div class="portfolio-container">
-                <h2>Portfolio</h2>
-                <ul class="portfolio-navigation">
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Panoramas</a></li>
-                    <li><a href="#">Portraits</a></li>
-                    <li><a href="#">Macro</a></li>
-                    <li><a href="#">Journal</a></li>
+                <h2 class="title title--dark">Portfolio</h2>
+                <ul class="portfolio-nav__list">
+                    <li class="portfolio-nav__item"><a href="#">All</a></li>
+                    <li class="portfolio-nav__item"><a href="#">Panoramas</a></li>
+                    <li class="portfolio-nav__item"><a href="#">Portraits</a></li>
+                    <li class="portfolio-nav__item"><a href="#">Macro</a></li>
+                    <li class="portfolio-nav__item"><a href="#">Journal</a></li>
                 </ul>
             </div>
-            <div class="portfolio-gallery">
-                <div class="container-image">
+            <div class="gallery">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img1.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img1.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img2.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img2.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img3.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img3.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img4.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img4.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="portfolio-gallery">
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img5.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img5.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img6.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img6.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img7.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img7.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
-                <div class="container-image">
+                <div class="gallery__box">
                    <a href="#">
-                        <img src="images/img8.png" alt="">
-                        <div class="overlay">
+                        <img class="gallery__img" src="images/img8.png" alt="">
+                        <div class="gallery__overlay">
                             <div class="overlay-text">+</div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
+        
         <section class="default">
             <div class="default-container">
-                <div class="default-text-container">
-                    <h2>Just default section</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis libero, assumenda natus. Quidem perspiciatis voluptatibus rem earum ipsa adipisci eius veritatis porro, amet quae explicabo cupiditate, fugiat tempore.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem recusandae ratione, deserunt debitis dignissimos cupiditate ut repudiandae, tempora perferendis sit magnam molestias maiores reiciendis aperiam.</p>
-                    <a href="#">Visit me</a>
+                <div class="default-wrap">
+                    <h2 class="title">Just default section</h2>
+                    <p class="default__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis libero, assumenda natus. Quidem perspiciatis voluptatibus rem earum ipsa adipisci eius veritatis porro, amet quae explicabo cupiditate, fugiat tempore.</p>
+                    <p class="default__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem recusandae ratione, deserunt debitis dignissimos cupiditate ut repudiandae, tempora perferendis sit magnam molestias maiores reiciendis aperiam.</p>
+                    <a class="default__link" href="#">Visit me</a>
                 </div>
-                <img src="images/vimeo.jpg" alt="">
+                <img class="default__img" src="images/vimeo.jpg" alt="">
             </div>
         </section>
+        
         <section class="twitter">
             <div class="twitter-container">
-                <div class="twitter-header">
-                    <h2>Twitter</h2>
+                <div class="twitter__header">
+                    <h2 class="title">Twitter</h2>
                 </div>
-                <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <a href="#">@cheesecake</a> tootsie roll.</p>
+                <p class="twitter__text">Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <a href="#">@cheesecake</a> tootsie roll.</p>
             </div>
         </section>
-        <section class="who-is">
-            <div class="who-is-container">
-                <h2>Who is john doe?</h2>
-                <div class="who-is-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officia autem, culpa dolorum dolor suscipit ut perferendis ab impedit numquam! In nostrum, cum vero autem modi velit delectus nihil consequatur?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officia autem, culpa dolorum dolor suscipit ut perferendis ab impedit numquam! In nostrum, cum vero autem modi velit delectus nihil consequatur?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officia autem, culpa dolorum dolor suscipit ut perferendis ab impedit numquam! In nostrum, cum vero autem modi velit delectus nihil consequatur?</p>
-                    <ul class="social-list">
-                        <li><a href="#"><img src="images/twi-logo.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="images/g-plus-logo.png" alt="Google+"></a></li>
-                        <li><a href="#"><img src="images/dri-logo.png" alt="Dribbble"></a></li>
-                        <li><a href="#"><img src="images/coffee-logo.png" alt="Coffee"></a></li>
+        
+        <section class="about">
+            <div class="about-bg"></div>
+            <div class="about-container">
+                <h2 class="title">Who is john doe?</h2>
+                <div class="about-wrap">
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officia autem, culpa dolorum dolor suscipit ut perferendis ab impedit numquam! In nostrum, cum vero autem modi velit delectus nihil consequatur?</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officia autem, culpa dolorum dolor suscipit ut perferendis ab impedit numquam! In nostrum, cum vero autem modi velit delectus nihil consequatur?</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officia autem, culpa dolorum dolor suscipit ut perferendis ab impedit numquam! In nostrum, cum vero autem modi velit delectus nihil consequatur?</p>
+                    <ul class="social__list">
+                        <li class="social__item"><a href="#"><img src="images/twi-logo.png" alt="Twitter"></a></li>
+                        <li class="social__item"><a href="#"><img src="images/g-plus-logo.png" alt="Google+"></a></li>
+                        <li class="social__item"><a href="#"><img src="images/dri-logo.png" alt="Dribbble"></a></li>
+                        <li class="social__item"><a href="#"><img src="images/coffee-logo.png" alt="Coffee"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
+        
         <section class="testimonials">
             <div class="testimonials-container">
-                <div class="testimonials-header">
-                    <h2>Testimonials</h2>
+                <div class="testimonials__header">
+                    <h2 class="title title--dark">Testimonials</h2>
                 </div>
-                <p class="quote">Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
-                <p class="quote-author">-Walter White</p>
+                <p class="testimonials__quote">Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                <p class="testimonials__author">-Walter White</p>
             </div>
         </section>
+        
         <section class="contact">
+            <div class="contact-bg"></div>
             <div class="contact-container">
-                <h2>Contact</h2>
-                <form action="#">
+                <h2 class="title">Contact</h2>
+                <div class="contact-info">
+                    <p class="contact-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quis quas vero illo odio eos odit alias omnis quos reprehenderit accusamus ab quidem, aut nulla reiciendis sequi, velit. Assumenda, amet?</p>
+                    <p class="contact-info__text">
+                        John Doe<br>
+                        W321 State Road 123<br>
+                        Miami, Florida 786-432<br>
+                        (555) 123 - 4567
+                    </p>
+                </div>
+                <form class="contact-form" action="#">
                     <div class="form-container">
-                        <div class="form-user-data">
-                            <b>Full name</b>
-                            <input type="text">
-                            <b>Email</b>
-                            <input type="email">
-                        </div>                    
-                        <div class="form-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quis quas vero illo odio eos odit alias omnis quos reprehenderit accusamus ab quidem, aut nulla reiciendis sequi, velit. Assumenda, amet?</p>
-                            <p>
-                            John Doe<br>
-                            W321 State Road 123<br>
-                            Miami, Florida 786-432<br>
-                            (555) 123 - 4567
-                            </p>
-                        </div>
-                    </div>
-                    <div class="form-container2">
-                        <b>Message</b>
-                        <textarea name="message" id="#" cols="30" rows="10"></textarea>
-                        <input type="submit" value="Message">
+                        <p class="input-name">Full name</p>
+                        <input class="input" type="text" name="name">
+                        <p class="input-name">Email</p>
+                        <input class="input" type="email" name="email">
+                        <p class="input-name">Message</p>
+                        <textarea class="input" name="message"></textarea>
+                        <input class="input" type="submit" value="Message">
                     </div>
                 </form>
             </div>
@@ -210,13 +221,13 @@
     
     <footer class="main-footer">
         <div class="footer-container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a href="#">Home</a></li>
+                <li class="footer-nav__item"><a href="#">Services</a></li>
+                <li class="footer-nav__item"><a href="#">Portfolio</a></li>
+                <li class="footer-nav__item"><a href="#">Contact</a></li>
             </ul>
-            <p>2018 &copy;</p>
+            <p class="copyright">2018 &copy;</p>
         </div>
     </footer>
 </body>
