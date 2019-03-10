@@ -354,7 +354,7 @@ a {
     left: 0;
 }
 
-.social__item {
+.social__item a {
     display: flex;
     width: 64px;
     height: 64px;
