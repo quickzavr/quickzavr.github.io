@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Baseline Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <main class="main-wrapper">
+
+            <img src="img/logo.png" alt="logo" class="logo">
+            <button type="button" class="form__toggle"></button>
+
+                <div id="form-wrapper" class="form--opened">
+                       
+                    <div class="attention">Все поля обязательны для заполнения</div>
+                    
+                    <div class="content">
+                        <input type="radio" name="tab" id="tab-1" class="tab-control" checked>
+                        <label for="tab-1" class="tab-control" data-label="1">1</label>
+                        <input type="radio" name="tab" id="tab-2" class="tab-control" disabled>
+                        <label for="tab-2" class="tab-control">2</label>
+                        <input type="radio" name="tab" id="tab-3" class="tab-control" disabled>
+                        <label for="tab-3" class="tab-control">3</label>
+                       
+                        <form action="" method="get" id="form-1">
+                            <div class="tab-1">
+                                <div class="tab-wrapper">
+                                    <div>
+                                        <img src="img/img1.png" alt="img1">
+                                    </div>
+                                    <div class="form-tab">
+                                        <p><input type="text" name="lastname" placeholder="Фамилия"></p>
+                                        <p><input type="text" name="firstname" placeholder="Имя"></p>
+                                        <p><input type="text" name="patronymic" placeholder="Отчество"></p>
+                                        <p class="gender-type">
+                                            <label class="gender">Мужчина
+                                                <input type="radio" checked="checked" name="gender" value="man">
+                                                <span class="checkmark-radio"></span>
+                                            </label>
+                                            <label class="gender">Женщина
+                                                <input type="radio" name="gender" value="woman">
+                                                <span class="checkmark-radio"></span>
+                                            </label>
+                                        </p>
+                                        <p><input name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Дата рождения"></p>
+                                        <p>
+                                            <label class="agree">Соглашаюсь с <a href="#">условиями участия</a>
+                                                <input type="checkbox" name="agree" id="agree" checked>
+                                                <span class="checkmark-box"></span>
+                                            </label>
+                                        </p>
+                                        <p><button type="button" class="btn-1" onclick="nextTab(0)">Продолжить</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="tab-2">
+                                <div class="tab-wrapper">
+                                    <div>
+                                        <img src="img/img2.png" alt="img2">
+                                    </div>
+                                    <div class="form-tab">
+                                        <p><input type="tel" name="tel" placeholder="Телефон"></p>
+                                        <p><input type="email" name="email" placeholder="Email"></p>
+                                        <p><input type="password" name="password" placeholder="Пароль"></p>
+                                        <p><input type="password" name="password-confirm" placeholder="Повторить пароль"></p>
+                                        <p><button type="button" id="send" class="btn-2" onclick="nextTab(1)">Продолжить</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    
+                        <form action="" method="post" id="form-2">                       
+                            <div class="tab-3">
+                                <div class="tab-wrapper">
+                                    <div>
+                                        <img src="img/img3.png" alt="img3">
+                                    </div>
+                                    <div class="form-tab">
+                                        <div class="phone-accept">
+                                            <p class="phone-text">На номер <span class="phone-number"></span> отправлен код подтверждения</p>
+                                            <p class="code-enter">Введите его в поле ниже:</p>
+                                            <p><input type="number" name="code" placeholder="Код"></p>
+                                            <p><button type="submit" id="join">Присоединиться</button></p>
+                                            <p><button type="button" class="again-send">Отправить код еще раз</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+                
+        </main>
+    </body>
+</html>
