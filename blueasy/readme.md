@@ -1,1 +1,4 @@
-http://quickzavr.github.io/blueasy
+https://quickzavr.github.io/blueasy
+
+clean css / js
+responsive design
