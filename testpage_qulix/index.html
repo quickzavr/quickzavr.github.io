@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/script.js" defer></script>
+        <title>Qulix Trial HTML</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <div class="main-nav-wrap">
+                    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open Menu</span></button>
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--active"><a href="#">Menu Item</a></li>
+                        <li class="site-list__item"><a href="#">Menu Item</a></li>
+                        <li class="site-list__item"><a href="#">Menu Item</a></li>
+                        <li class="site-list__item"><a href="#">Menu Item</a></li>
+                        <li class="site-list__item"><a href="#">Menu Item</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-header">
+                <div class="main-header-wrap">
+                    <a class="page-header__logo">
+                        <img class="page-header__logo-image" src="images/logo-effect-head.png" alt="Qulix Systems" height="27" width="43">
+                    </a>
+                    <h1 class="page-title">Page Title</h1>
+                    <select class="city-select" onchange="javascript:location.href = this.value;">
+                            <option value="#">New York</option>
+                            <option value="#">London</option>
+                            <option value="#">Minsk</option>
+                    </select>
+                    <button class="notification"><img src="images/notification.png" alt="notification"></button>
+                    <button class="message"><img src="images/message.png" alt="message"></button>
+                    <a href="#" class="user-name">User name</a>
+                    <button class="user-pic"><img src="images/user.jpg" alt="user-pic"></button>
+                    <button class="search"><img src="images/search.png" alt="search"></button>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <aside class="main-aside">
+                <section class="aside-box">
+                    <ul class="aside-list">
+                        <li class="aside-item"><a href="#">Submenu item <span>7d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>5d</span></a></li>
+                    </ul>
+                </section>
+                <section class="aside-box">
+                    <h3 class="aside-title">Submenu</h3>
+                    <ul class="aside-list">
+                        <li class="aside-item"><a href="#">Submenu item <span>7d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>2d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>4d</span></a></li>
+                        <li class="aside-item"><a href="#">More tags</a></li>
+                    </ul>
+                </section>
+                <section class="aside-box">
+                    <h3 class="aside-title">Submenu</h3>
+                    <ul class="aside-list">
+                        <li class="aside-item aside-item--active"><a href="#">Submenu item <span>1d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>1d</span></a></li>
+                    </ul>
+                </section>
+                <section class="aside-box">
+                    <h3 class="aside-title">Submenu</h3>
+                    <ul class="aside-list">
+                        <li class="aside-item"><a href="#">Submenu item <span>4d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>2d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item1 &amp; Submenuitem2 <span>2d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>7d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>1d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>1d</span></a></li>
+                    </ul>
+                </section>
+                <section class="aside-box">
+                    <h3 class="aside-title">Submenu</h3>
+                    <ul class="aside-list">
+                        <li class="aside-item"><a href="#">Submenu item <span>2d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>1d</span></a></li>
+                        <li class="aside-item"><a href="#">Submenu item <span>3d</span></a></li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="main-wrap">
+                <section class="main-title">
+                    <div class="main-title-wrap">
+                    <h2>Page Title in</h2>
+                    <select id="cities" class="city-select" onchange="javascript:location.href = this.value;">
+                        <option value="#" class="city-option">New York</option>
+                        <option value="#" class="city-option">London</option>
+                        <option value="#" class="city-option">Minsk</option>
+                    </select>
+                    </div>
+                </section>
+                <section class="main-search">
+                    <form action="/search" method="post" name="search-form" class="search-form">
+                        <input type="search" class="search-input search-input--closed" name="search" placeholder="Search ...">
+                        <button type="button" class="search-icon search-icon--closed"></button>
+                    </form>
+                    <button type="button" class="add-content"></button>
+                    <button type="button" class="settings"></button>
+                </section>
+                <article class="main-content">
+                    <section class="content-box">
+                        <a href="#" class="content-box__user"><img src="images/user1.jpg" alt="user"></a>
+                        <div class="content-box__header">
+                            <a href="#" class="content-box__name">User name</a>
+                            <span class="content-box__status">Pro</span>
+                            <span class="content-box__comment">2</span>
+                            <span class="content-box__time">20m</span>
+                        </div>
+                        <div class="content-box__title">
+                            <h3>Item Title 1</h3>
+                            <span class="content-box__alert"></span>
+                        </div>
+                        <p class="content-box__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                        <p class="content-box__tags"><a href="#">tag1</a>, <a href="#">tag2</a>, <a href="#">tag3</a></p>
+                    </section>
+                    <section class="content-box">
+                        <a href="#" class="content-box__user"><img src="images/user2.jpg" alt="user"></a>
+                        <div class="content-box__header">
+                            <a href="#" class="content-box__name">User name</a>
+                            <span class="content-box__status">Member</span>
+                            <span class="content-box__comment">2</span>
+                            <span class="content-box__time">20m</span>
+                        </div>
+                        <div class="content-box__title">
+                            <h3>Item Title 2</h3>
+                            <span></span>
+                        </div>
+                        <p class="content-box__text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                        <p class="content-box__tags"><a href="#">tag1</a>, <a href="#">tag2</a>, <a href="#">tag3</a></p>
+                    </section>
+                    <section class="content-box">
+                        <a href="#" class="content-box__user"><img src="images/user3.jpg" alt="user"></a>
+                        <div class="content-box__header">
+                            <a href="#" class="content-box__name">User name</a>
+                            <span class="content-box__status">Member</span>
+                            <span class="content-box__comment">2</span>
+                            <span class="content-box__time">20m</span>
+                        </div>
+                        <div class="content-box__title">
+                            <h3>Item Title 3</h3>
+                            <span></span>
+                        </div>
+                        <p class="content-box__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                        <p class="content-box__tags"><a href="#">tag1</a>, <a href="#">tag2</a>, <a href="#">tag3</a></p>
+                    </section>
+                    <section class="content-box">
+                        <a href="#" class="content-box__user"><img src="images/user4.jpg" alt="user"></a>
+                        <div class="content-box__header">
+                            <a href="#" class="content-box__name">User name</a>
+                            <span class="content-box__status">Member</span>
+                            <span class="content-box__comment">2</span>
+                            <span class="content-box__time">20m</span>
+                        </div>
+                        <div class="content-box__title">
+                            <h3>Item Title 4</h3>
+                            <span></span>
+                        </div>
+                        <p class="content-box__text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                        <p class="content-box__tags"><a href="#">tag1</a>, <a href="#">tag2</a>, <a href="#">tag3</a></p>
+                    </section>
+                </article>
+                <div class="btn-wrap">
+                    <button type="button" class="content-btn content-btn--prev">Previous</button>
+                    <button type="button" class="content-btn content-btn--next">Next</button>
+                </div>
+            </main>
+            <footer class="page-footer">
+                <div class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#">About</a></li>
+                        <li class="footer-nav__item"><a href="#">Policies</a></li>
+                        <li class="footer-nav__item"><a href="#">Site Map</a></li>
+                        <li class="footer-nav__item"><a href="#">Help</a></li>
+                        <li class="footer-nav__item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copy">
+                    <img class="page-footer__logo-image" src="images/logo-effect-foot.png" alt="Qulix" width="21" height="13">
+                    <p class="page-footer__copy-text">&copy;2015. Qulix Systems. All rigths reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
