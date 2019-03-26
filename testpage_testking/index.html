@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="libs/owl.carousel.min.css">
+        <link rel="stylesheet" href="libs/owl.theme.default.min.css">
+        <script src="libs/jquery-3.3.1.min.js" defer></script>
+        <script src="libs/owl.carousel.min.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/carousel.js" defer></script>
+        <title>TestExam</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="header-wrap">
+                <div class="logo"><h1>Test<span>Exam</span></h1></div>
+                <form action="/search" method="post" name="search-form" class="search">
+                    <input type="search" class="search__input search__input--closed" name="search" placeholder="Enter your text">
+                    <button type="submit" class="search__btn search__btn--closed">Search</button>
+                </form>
+                <nav class="user-nav user-nav--closed user-nav--nojs">
+                    <button class="user-nav__toggle">
+                        <span class="visually-hidden">Open user menu</span>
+                    </button>
+                    <ul class="user-nav__list">
+                        <li class="user-nav__item"><a href="#">Login/Register</a></li>
+                        <li class="user-nav__item"><a href="#">FAQ</a></li>
+                        <li class="user-nav__item"><a href="#">Contact</a></li>
+                        <li class="user-nav__item"><a href="#">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-wrap-2nd">
+                <nav class="main-nav main-nav--closed main-nav--nojs">
+                    <button class="main-nav__toggle">
+                        <span class="visually-hidden">Open main menu</span>
+                    </button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#">Home</a></li>
+                        <li class="main-nav__item"><a href="#">Subscription</a></li>
+                        <li class="main-nav__item"><a href="#">New files</a></li>
+                        <li class="main-nav__item"><a href="#">Test simulator</a></li>
+                        <li class="main-nav__item"><a href="#">Jobs</a></li>
+                        <li class="main-nav__item"><a href="#">Request exam</a></li>
+                    </ul>
+                </nav>
+                <div class="exam-nav">
+                    <div class="exam-nav__wrap">
+                        <div class="exam-nav__title">Practice Exams:</div>
+                        <ul class="exam-nav__list">
+                            <li class="exam-nav__item"><a href="#">Microsoft</a></li>
+                            <li class="exam-nav__item"><a href="#">Cisco</a></li>
+                            <li class="exam-nav__item"><a href="#">VMware</a></li>
+                            <li class="exam-nav__item"><a href="#">CompTIA</a></li>
+                            <li class="exam-nav__item"><a href="#">CheckPoint</a></li>
+                            <li class="exam-nav__item"><a href="#">Citrix</a></li>
+                            <li class="exam-nav__item"><a href="#">ECCouncil</a></li>
+                            <li class="exam-nav__item"><a href="#">HP</a></li>
+                            <li class="exam-nav__item"><a href="#">IBM</a></li>
+                            <li class="exam-nav__item"><a href="#">ISC</a></li>
+                            <li class="exam-nav__item"><a href="#">PMI</a></li>
+                            <li class="exam-nav__item"><a href="#">The Open Group</a></li>
+                            <li class="exam-nav__item"><a href="#">Admission Tests</a></li>
+                            <li class="exam-nav__item"><a href="#">View All</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <article class="main-content">
+                <section class="content-desc">
+                    <div class="image-container">
+                        <span class="image-mark">Best seller!</span>
+                        <img src="images/main-img.jpg" alt="main image" width="100%" height="auto">
+                    </div>
+                    <div class="info-container">
+                        <div class="rate-cost">
+                            <div class="rate">
+                                <span class="star star--full"></span>
+                                <span class="star star--full"></span>
+                                <span class="star star--full"></span>
+                                <span class="star star--full"></span>
+                                <span class="star star--empty"></span>
+                            </div>
+                            <div class="cost">
+                                <span class="cost--old">$112</span>
+                                <span class="cost--new">$99.85</span>
+                            </div>
+                        </div>
+                        <h2 class="content-head">Advanced CSS and Sass: Take Your CSS to the Next Level!</h2>
+                        <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <ul class="info__list">
+                            <li class="info__item info__item--enroll">3320 Students Enrolled</li>
+                            <li class="info__item info__item--lect">97 Lectures</li>
+                            <li class="info__item info__item--time">2 Hours</li>
+                        </ul>
+                        <button type="button" class="add-btn">Add to Cart</button>
+                    </div>
+                </section>
+                <section class="course-slider">
+                    <h3 class="section__title">Curriculum for this course</h3>
+                    <div class="slider-wrap">
+                        <div class="owl-carousel">
+                            <a href="#"><div class="slide slide--one">
+                                    <p class="slide--item slide--num">1</p>
+                                    <p class="slide--item slide--title">Exams</p>
+                                    <div class="slide--info">
+                                        <p class="slide--item slide--lect">25 Lectures</p>
+                                        <p class="slide--item slide--time">Time 02:54:58</p>
+                                    </div>
+                                </div></a>
+                            <a href="#"><div class="slide slide--two">
+                                    <p class="slide--item slide--num">2</p>
+                                    <p class="slide--item slide--title">Data of Exploration</p>
+                                    <div class="slide--info">
+                                        <p class="slide--item slide--lect">19 Lectures</p>
+                                        <p class="slide--item slide--time">Time 02:54:58</p>
+                                    </div>
+                                </div></a>
+                            <a href="#"><div class="slide slide--three">
+                                <p class="slide--item slide--num">3</p>
+                                <p class="slide--item slide--title">Data Cleaning 1</p>
+                                <div class="slide--info">
+                                    <p class="slide--item slide--lect">22 Lectures</p>
+                                    <p class="slide--item slide--time">Time 02:54:58</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="slide slide--three">
+                                <p class="slide--item slide--num">4</p>
+                                <p class="slide--item slide--title">Data Cleaning 2</p>
+                                <div class="slide--info">
+                                    <p class="slide--item slide--lect">15 Lectures</p>
+                                    <p class="slide--item slide--time">Time 02:54:58</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="slide slide--three">
+                                <p class="slide--item slide--num">5</p>
+                                <p class="slide--item slide--title">Data Cleaning 3</p>
+                                <div class="slide--info">
+                                    <p class="slide--item slide--lect">12 Lectures</p>
+                                    <p class="slide--item slide--time">Time 02:54:58</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="slide slide--three">
+                                <p class="slide--item slide--num">6</p>
+                                <p class="slide--item slide--title">Data Cleaning 4</p>
+                                <div class="slide--info">
+                                    <p class="slide--item slide--lect">22 Lectures</p>
+                                    <p class="slide--item slide--time">Time 02:54:58</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="slide slide--three">
+                                <p class="slide--item slide--num">7</p>
+                                <p class="slide--item slide--title">Data Cleaning 5</p>
+                                <div class="slide--info">
+                                    <p class="slide--item slide--lect">15 Lectures</p>
+                                    <p class="slide--item slide--time">Time 02:54:58</p>
+                                </div>
+                            </div></a>
+                            <a href="#"><div class="slide slide--three">
+                                <p class="slide--item slide--num">8</p>
+                                <p class="slide--item slide--title">Data Cleaning 6</p>
+                                <div class="slide--info">
+                                    <p class="slide--item slide--lect">12 Lectures</p>
+                                    <p class="slide--item slide--time">Time 02:54:58</p>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                
+                
+                
+                
+                
+                <section class="course-about">
+                    <h3 class="section__title">About this course</h3>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <button type="button" class="about-btn" onclick="showMore()">Read More</button>
+                </section>
+                <section class="course-exam">
+                    <h3 class="section__title">Free 70-744 Exam Questions</h3>
+                    <div class="exam__quest">
+                        <div class="exam__link">
+                            <a href="#">Cisco.testexam.300-101.v2018-02-09.by.adria.309qs.pdf</a>
+                        </div>
+                        <div class="exam__info">
+                            <table class="exam__table">
+                                <tr>
+                                    <td>Views: <span>12660400</span></td>
+                                    <td>Size: <span>17.2 MB</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Downloads: <span>768554</span></td>
+                                    <td>Votes: <span>850</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="exam__quest">
+                        <div class="exam__link">
+                            <a href="#">Microsoft.SY0-401.v2015-02-27by.John.2014q.pdf</a>
+                        </div>
+                        <div class="exam__info">
+                            <table class="exam__table">
+                                <tr>
+                                    <td>Views: <span>1565742</span></td>
+                                    <td>Size: <span>15.4 MB</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Downloads: <span>979110</span></td>
+                                    <td>Votes: <span>435</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>                
+            </article>
+        </main>
+    </body>
+</html>
